@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "c90a1cf7-aec7-4fa0-b432-d34af2bb44ab",
+		"name": "Clientes SOLID Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27532932",
+		"_collection_link": "https://warped-firefly-748319.postman.co/workspace/Team-Workspace~62cf569d-daee-4ae8-87d9-2d1be527e9f2/collection/27532932-c90a1cf7-aec7-4fa0-b432-d34af2bb44ab?action=share&source=collection_link&creator=27532932"
+	},
+	"item": [
+		{
+			"name": "Cliente GET Solid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/clientes/carregar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"clientes",
+						"carregar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cliente POST Solid",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Nome 3\",\r\n    \"sobrenome\": \"Sobrenome 3\",\r\n    \"dataNascimento\": \"1990-02-20T14:40:00\",\r\n    \"documento\": \"963258123\",\r\n    \"email\": \"teste3@gmail.com\",\r\n    \"telefone\": \"48990004563\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/clientes/criar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"clientes",
+						"criar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cliente PUT Solid",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Nome 2\",\r\n    \"sobrenome\": \"Sobrenome 2\",\r\n    \"dataNascimento\": \"1990-02-20T14:40:00\",\r\n    \"documento\": \"963258123\",\r\n    \"email\": \"teste2@gmail.com\",\r\n    \"telefone\": \"48990004563\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/clientes/atualizar/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"clientes",
+						"atualizar",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cliente DELETE Solid",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/clientes/deletar/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"clientes",
+						"deletar",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
